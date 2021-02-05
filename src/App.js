@@ -2,6 +2,7 @@ import Login from './components/Login'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import {Link,Switch,Route} from 'react-router-dom'
 import './App.css'
+import SignUp from './components/SignUp'
 
 function App() {
   return (
@@ -25,8 +26,9 @@ function App() {
           <div className="outer-div">
             <div className="inner-div">
               <Switch>
-                <Route path="/" component={Login}/>
+                <Route exact path="/" component={Login}/>
                 <Route path="/sign-in" component={Login}/>
+                <Route path="/sign-up" component={SignUp}/>
               </Switch>
             </div>
           </div>
